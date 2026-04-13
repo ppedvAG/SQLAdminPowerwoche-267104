@@ -42,10 +42,11 @@ Best Practice:
 
 -- Trenne DAten von Logs!
 -- TempDb auf andere Platte
--- TempDB mehr Datendateien
+-- TempDB mehr Datendateien soviel wie Kerne, aber max 8 
 -- Volumewartungstask (Windows Einstellung)
--- den MAXDOP definieren (wieviele Kerne darf eine Abfrage maximal bekommen)
--- Arbeitsspeicher: dem SQL Server einen maximalen Wert  vorgeben
+-- den MAXDOP definieren (MAXDOP sollte = Anzahl der Kerne sein , aber nicht mehr als 8
+				--> wieviele Kerne darf eine Abfrage maximal bekommen)
+-- Arbeitsspeicher: dem SQL Server einen maximalen Wert vorgeben (= Gesamt RAM - OS)
 -- SA langes Kennwort
 --
 
